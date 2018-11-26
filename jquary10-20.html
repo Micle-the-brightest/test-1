@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <h1>darkside 1</h1>
+    <h2>darkside 2</h2>
+    <h3>darkside 3</h3>
+    <h4>darkside 4</h4>
+    <h5>darkside 5</h5>
+
+    <h2>lightning 1</h2>
+    <h2 class="test">lightning 1</h2>
+    <h2>lightning 1</h2>
+
+    <h3>darkside 3</h3>
+    <h4 class="test">darkside 4</h4>
+    <h5>darkside 5</h5>
+
+    <h1>darkside 1</h1>
+    <h2>darkside 2</h2>
+    <h3>darkside 3</h3>
+    <h4>darkside 4</h4>
+    <h5>darkside 5</h5>
+
+   <h4 class="test">darkside 4</h4>
+   <h4 class="test">darkside 4</h4>
+   <h4 class="test">darkside 4</h4>
+   <h4 class="test">darkside 4</h4>
+  <br>
+  <br>
+  <br>
+
+   <script type="text/javascript">
+      $(':header').css('color', 'red'); //Все заголовки
+      $('h2:not(.test)').css('color', 'blue'); //Все <h2> НЕ с классом test.
+      $(':header:not(.test)').css('color', '#42f448'); // Все заголовки НЕ с классом test.
+      $(':header+:header').css('color', '#fff130');  //Все заголовки, которые следуют сразу за заголовками
+      $(':header.test+:header.test').css('color','#2bdbf2')  //Все заголовки с классом test, которые следуют сразу за заголовками с классом test.
+      $(':empty').css('color', 'red'); //Все пустые элементы. 
+
+
+
+   </script>
+  </body>
+  </html>
